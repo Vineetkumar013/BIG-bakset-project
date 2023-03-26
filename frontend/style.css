@@ -1,0 +1,573 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* body{
+    box-sizing: border-box;
+    border: 2px solid seagreen;
+    margin: 0px 20px;
+} */
+
+.menubar{
+    display: flex;
+}
+ .logo{
+    width: 150px;
+    margin-left: 4rem;
+} 
+
+.search{
+    width: 40rem;
+    padding-left: 20px;
+    margin-left: 8rem;
+    margin-top: 30px;
+    height: 40px;
+    border: 2px solid #84c225;
+}
+
+.menutop{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .menubar {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 30%;
+    margin-right: 0;
+  }
+  
+  .search {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .menutop {
+    flex-direction: column;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+/* ___________________________________________ */
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+#slider{
+  margin:0 auto;
+  width:80%;
+  overflow:hidden;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+img{
+  width:100%;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.active{
+  background:black;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+}
+
+
+.box3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.productAll{
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.basket{
+    margin-right: 25rem;
+}
+
+.showAll{
+    margin-right: 5rem;
+    padding: 5px 20px;
+    background-color: #84c225;
+    border: none;
+    color: #fefefe;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 467px) {
+  .box3 {
+    flex-direction: column;
+  }
+  .productAll {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .basket {
+    margin-right: 0;
+  }
+  .showAll {
+    margin-right: 0;
+  }
+}
+
+.box4{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px; 
+    margin: 50px;
+}
+
+.box4-div1{
+    padding: 10px 30px;
+    border: 1px solid lightgrey;
+    height: 20rem;
+}
+
+.box4-div2{
+    padding: 10px 30px;
+    border: 1px solid lightgrey;
+}
+
+.box4-div3{
+    padding: 10px 30px;
+    border: 1px solid lightgrey;
+}
+
+.box4-div4{
+    padding: 10px 30px;
+    border: 1px solid lightgrey;
+}
+
+.box4-div5{
+    padding: 10px 30px;
+    border: 1px solid lightgrey;
+}
+
+.bankoffer{
+  margin-left: 38rem;
+}
+
+@media only screen and (max-width : 480px) {
+  .box4 {
+      display: block;
+      margin: 0;
+  }
+
+  .box4-div1 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div2 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div3 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div4 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div5 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .bankoffer {
+      margin-left: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+  .box4 {
+      display: block;
+      margin: 0;
+  }
+
+  .box4-div1 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div2 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div3 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div4 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div5 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .bankoffer {
+      margin-left: 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+  .box4 {
+      display: block;
+      margin: 0;
+  }
+
+  .box4-div1 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div2 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div3 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div4 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .box4-div5 {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .bankoffer {
+      margin-left: 0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 993px) {
+  .box4 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      margin: 50px;
+  }
+
+  .box4-div1 {
+      padding: 10px 30px;
+      border: 1px solid lightgrey;
+      height: 20rem;
+  }
+
+  .box4-div2 {
+      padding: 10px 30px;
+      border: 1px solid lightgrey;
+  }
+
+  .box4-div3 {
+      padding: 10px 30px;
+      border: 1px solid lightgrey;
+  }
+
+  .box4-div4 {
+      padding: 10px 30px;
+      border: 1px solid lightgrey;
+  }
+
+  .box4-div5 {
+      padding: 10px 30px;
+      border: 1px solid lightgrey;
+  }
+
+  .bankoffer {
+      margin-left: 38rem;
+  }
+}
+
+.box5{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 70px;
+}
+
+.bestsellerproduct{
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+
+.bestseller{
+  margin-right: 25rem;
+}
+
+.showAll2{
+  margin-right: 5rem;
+  padding: 5px 20px;
+  background-color: #84c225;
+  border: none;
+  color: #fefefe;
+  border-radius: 10px;
+}
+
+.box6{
+  display: flex;
+  justify-content: space-evenly;
+  margin:5px 50px;
+}
+
+.box6-div1{
+  padding: 10px 30px;
+  border: 1px solid lightgrey;
+  height: 20rem;
+}
+
+.box6-div2{
+  padding: 10px 30px;
+  border: 1px solid lightgrey;
+}
+
+.box6-div3{
+  padding: 10px 30px;
+  border: 1px solid lightgrey;
+}
+
+.box6-div4{
+  padding: 10px 30px;
+  border: 1px solid lightgrey;
+}
+
+.box6-div5{
+  padding: 10px 30px;
+  border: 1px solid lightgrey;
+}
+ .mostpopular{
+  margin-top: 10rem;
+  text-align: center
+ }
+
+ .box7{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 70px;
+  border: 1px solid grey;
+}
+
+.topoffer{
+  margin-top: 30px;
+  text-align: center
+ }
+
+.box8{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 70px;
+  border: 1px solid grey;
+}
+
+.Fruits{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .box9{
+  display: flex;
+  margin: 0px 70px;
+}
+.Beverages{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .box10{
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+.box10-div2{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+}
+
+.box11{
+  display: flex;
+  margin: 0px 70px;
+}
+.Snack{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .Cleaning{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .box12{
+  display: flex;
+  margin: 0px 70px;
+}
+
+.Beauty{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .box13{
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+.box13-div2{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+}
+
+.box14{
+  display: flex;
+  margin: 0px 70px;
+}
+.Home{
+  margin-top: 30px;
+  text-align: center
+ }
+
+ .box15{
+  display: flex;
+  margin: 0px 70px;
+}
+.Brand{
+  margin-top: 30px;
+  text-align: center;
+ }
+
+ .Featured{
+  margin-top: 30px;
+  text-align: center;
+ }
+
+ .box16{
+  display: flex;
+  justify-content: center;
+ }
+
+ .box17{
+  margin-top: 2rem;
+  border: 1px solid black;
+  padding: 0rem 4rem;
+  margin-left: 6.4rem;
+  margin-right: 6.4rem;
+  padding-bottom: 2rem;
+ }
+
+ .box17-h1{
+  padding-top: 2rem;
+ }
+
+ .box17-p{
+  text-align: justify;
+  padding-top: 1rem;
+ }
+
+.box17-btn{
+  margin-top: 1rem;
+  padding: 10px 20px;
+}
+
+.box18{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 3rem;
+  margin: 0px 70px;
+}
+
+.box18-div3-img{
+  width: 120px;
+  align-items: center;
+}
